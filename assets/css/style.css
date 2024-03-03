@@ -1,25 +1,4 @@
-/*-----------------------------------*\
-  #main.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
-
   --rich-black-fogra-29: hsl(222, 44%, 8%);
   --middle-blue-green_40: hsla(174, 64%, 71%, 0.4);
   --midnight-green: hsl(186, 100%, 19%);
@@ -36,50 +15,23 @@
   --white_a20: hsla(0, 0%, 100%, 0.2);
   --white_a10: hsla(0, 0%, 100%, 0.1);
   --black: hsl(0, 0%, 0%);
-
-  /**
-   * typography
-   */
-
   --ff-oswald: 'Oswald', sans-serif;
   --ff-rubik: 'Rubik', sans-serif;
-  
   --headline-lg: 5rem;
   --headline-md: 3rem;
   --headline-sm: 2rem;
   --title-lg: 1.8rem;
   --title-md: 1.5rem;
   --title-sm: 1.4rem;
-  
   --fw-500: 500;
   --fw-700: 700;
-
-  /**
-   * spacing
-   */
-
   --section-padding: 120px;
-
-  /**
-   * box shadow
-   */
-
   --shadow-1: 0px 2px 20px hsla(209, 36%, 72%, 0.2);
   --shadow-2: 0 4px 16px hsla(0, 0%, 0%, 0.06);
-
-  /**
-   * border radius
-   */
-
   --radius-circle: 50%;
   --radius-12: 12px;
   --radius-6: 6px;
   --radius-4: 4px;
-
-  /**
-   * transition
-   */
-
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --transition-3: 1s ease;
@@ -87,14 +39,6 @@
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
 
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -156,14 +100,6 @@ body {
 body.loaded { overflow-y: visible; }
 
 body.nav-active { overflow: hidden; }
-
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 16px; }
 
@@ -264,14 +200,6 @@ body.nav-active { overflow: hidden; }
 [data-reveal="left"].revealed,
 [data-reveal="right"].revealed { transform: translateX(0); }
 
-
-
-
-
-/*-----------------------------------*\
-  #PRELOADER
-\*-----------------------------------*/
-
 .preloader {
   position: fixed;
   top: 0;
@@ -303,14 +231,6 @@ body.nav-active { overflow: hidden; }
   0% { transform: rotate(0); }
   100% { transform: rotate(1turn); }
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 .header .btn { display: none; }
 
@@ -416,14 +336,6 @@ body.nav-active { overflow: hidden; }
   visibility: visible;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .hero-banner { display: none; }
 
 .hero {
@@ -484,14 +396,6 @@ body.nav-active { overflow: hidden; }
   margin-block-start: 16px;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
-
 .service-list {
   padding-block: 60px 30px;
   padding-inline: 25px;
@@ -528,14 +432,6 @@ body.nav-active { overflow: hidden; }
   background-color: var(--verdigris);
   color: var(--white);
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
 
 .about { padding-block-end: 0; }
 
@@ -583,14 +479,6 @@ body.nav-active { overflow: hidden; }
   flex-shrink: 0;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #LISTING
-\*-----------------------------------*/
-
 .listing { background-color: var(--alice-blue); }
 
 .listing-card {
@@ -610,14 +498,6 @@ body.nav-active { overflow: hidden; }
 }
 
 .listing-card .card-text { color: var(--midnight-green); }
-
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
 
 .blog {
   background-image: linear-gradient(to bottom, var(--alice-blue) 60%, var(--white) 60%);
@@ -691,14 +571,6 @@ body.nav-active { overflow: hidden; }
 .blog-card:is(:hover, :focus-within) :is(.card-meta, .card-title, .date, .card-text, .btn-text) {
   color: var(--white);
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
 
 .footer {
   background-color: var(--midnight-green);
@@ -801,14 +673,6 @@ body.nav-active { overflow: hidden; }
 
 .footer-bottom .social-link:is(:hover, :focus-visible) { background-color: var(--verdigris); }
 
-
-
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
 .back-top-btn {
   position: fixed;
   bottom: 30px;
@@ -830,40 +694,11 @@ body.nav-active { overflow: hidden; }
   opacity: 1;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 768px screen
- */
-
 @media (min-width: 768px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --headline-lg: 8rem;
     --headline-md: 4.8rem;
-
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 750px;
@@ -871,23 +706,11 @@ body.nav-active { overflow: hidden; }
     margin-inline: auto;
   }
 
-
-
-  /**
-   * HEADER
-   */
-
   .header .btn { display: block; }
 
   .nav-open-btn { margin-inline-start: auto; }
 
   .header .container { gap: 40px; }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero-title { line-height: 1.125; }
 
@@ -905,19 +728,7 @@ body.nav-active { overflow: hidden; }
     margin-block-start: 0;
   }
 
-
-
-  /**
-   * SERVICE
-   */
-
   .service-list { grid-template-columns: 1fr 1fr; }
-
-
-
-  /**
-   * ABOUT
-   */
 
   .about-list {
     display: grid;
@@ -929,21 +740,9 @@ body.nav-active { overflow: hidden; }
     margin-inline: auto;
   }
 
-
-
-  /**
-   * LISTING
-   */
-
   .listing .grid-list { grid-template-columns: 1fr 1fr; }
 
   .listing .grid-list > li:first-child { grid-column: 1 / 3; }
-
-
-
-  /**
-   * FOOTER
-   */
 
   .footer-top { grid-template-columns: 1fr 1fr; }
 
@@ -966,27 +765,9 @@ body.nav-active { overflow: hidden; }
 
 }
 
-
-
-
-
-/**
- * responsive for large than 992px screen
- */
-
 @media (min-width: 992px) {
 
-  /**
-   * REUSED STYLE
-   */
-
   .container { max-width: 940px; }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero-banner {
     display: block;
@@ -999,19 +780,7 @@ body.nav-active { overflow: hidden; }
     align-items: center;
   }
 
-
-
-  /**
-   * SERVICE
-   */
-
   .service-list { grid-template-columns: repeat(4, 1fr); }
-
-
-
-  /**
-   * ABOUT
-   */
 
   .about .container {
     grid-template-columns: 1fr 0.8fr;
@@ -1022,37 +791,12 @@ body.nav-active { overflow: hidden; }
 
   .about-banner { margin-inline-end: -80px; }
 
-
-
-  /**
-   * BLOG
-   */
-
   .blog .grid-list { grid-template-columns: 1fr 1fr; }
 
 }
 
-
-
-
-
-/**
- * responsive for large than 1200px screen
- */
-
 @media (min-width: 1200px) {
-
-  /**
-   * REUSED STYLE
-   */
-
   .container { max-width: 1200px; }
-
-
-
-  /**
-   * HEADER
-   */
 
   .header { padding-block: 24px; }
 
@@ -1084,38 +828,14 @@ body.nav-active { overflow: hidden; }
     text-transform: capitalize;
   }
 
-
-
-  /**
-   * HERO
-   */
-
   .hero .container {
     grid-template-columns: 0.8fr 1fr;
     gap: 96px;
   }
 
-
-
-  /**
-   * LISTING
-   */
-
   .listing .grid-list { grid-template-columns: repeat(4, 1fr); }
 
-
-
-  /**
-   * BLOG
-   */
-
   .blog .grid-list { grid-template-columns: repeat(3, 1fr); }
-
-
-
-  /**
-   * FOOTER
-   */
 
   .footer { background-size: auto; }
 
